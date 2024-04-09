@@ -6,7 +6,7 @@ import "swiper/css/free-mode"
 import "swiper/css/pagination"
 import {  FreeMode, Pagination } from 'swiper'
 
-import Coursecard from './Coursecard'
+import CoursesCard from './CoursesCard'
 
 const CourseSlider = ({ Courses }) => {
     return (
@@ -26,7 +26,7 @@ const CourseSlider = ({ Courses }) => {
                 >
                     {Courses?.map((course, i) => (
                         <SwiperSlide key={i}>
-                            <Coursecard course={course} Height={"h-[250px]"} />
+                            <CoursesCard course={course} Height={"h-[250px]"} />
                         </SwiperSlide>
                     ))}
                 </Swiper>
