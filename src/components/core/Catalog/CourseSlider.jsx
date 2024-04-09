@@ -6,7 +6,7 @@
 // import "swiper/css/pagination"
 // import { Autoplay, FreeMode, Navigation, Pagination } from 'swiper'
 
-// import CoursesCard from './CoursesCard'
+// import Course_Card from './Course_Card'
 
 // const CourseSlider = ({ Courses }) => {
 //     return (
@@ -26,7 +26,7 @@
 //                 >
 //                     {Courses?.map((course, i) => (
 //                         <SwiperSlide key={i}>
-//                             <CoursesCard course={course} Height={"h-[250px]"} />
+//                             <Course_Card course={course} Height={"h-[250px]"} />
 //                         </SwiperSlide>
 //                     ))}
 //                 </Swiper>
@@ -47,7 +47,7 @@ import "swiper/css/free-mode"
 import "swiper/css/pagination"
 import {  FreeMode, Pagination } from 'swiper'
 
-import CoursesCard from './CoursesCard'
+import Course_Card from './Course_Card'
 
 const CourseSlider = ({ Courses }) => {
     return (
@@ -67,7 +67,7 @@ const CourseSlider = ({ Courses }) => {
                 >
                     {Courses?.map((course, i) => (
                         <SwiperSlide key={i}>
-                            <CoursesCard course={course} Height={"h-[250px]"} />
+                            <Course_Card course={course} Height={"h-[250px]"} />
                         </SwiperSlide>
                     ))}
                 </Swiper>
