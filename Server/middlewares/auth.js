@@ -1,4 +1,6 @@
+const express = require('express');
 const jwt = require("jsonwebtoken");
+const cors = require('cors');
 const dotenv = require("dotenv");
 dotenv.config();
 const User = require("../models/User");
@@ -6,6 +8,9 @@ const User = require("../models/User");
 // auth : json token verify krte the
 // token can be extracted from cookie,body,bearer token
 // the safe and best practice is bearer token and avoid using body token
+const app = express();
+app.use(cors());
+
 exports.auth = async (req, res, next) => {
     try {
         // extract token
