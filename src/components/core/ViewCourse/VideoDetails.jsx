@@ -26,7 +26,7 @@ const VideoDetails = () => {
     const [loading, setLoading] = useState(false)
 
     useEffect(() => {
-        ; (async () => {
+        (async () => {
             if (!courseSectionData.length) return
             if (!courseId && !sectionId && !subSectionId) {
                 navigate(`/dashboard/enrolled-courses`)
